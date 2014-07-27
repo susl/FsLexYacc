@@ -11,7 +11,7 @@ $FSHARPI --lib:$libdir $@
 EOF
 chmod +x fsharpi
 #return build.fsx exit code
-e=$?
 mono packages/FAKE/tools/FAKE.exe build.fsx $@
+e=$?
 rm fsharpi
 exit $e
